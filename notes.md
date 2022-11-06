@@ -4,7 +4,7 @@
 
 2. John the Ripper has a bunch of rules for common password permutations based on usernames that could potentially crack some of the passwords. To list the available rule list type the following command: 
 
-	```
+```
 	`john --list=rules`
 
 all
@@ -110,7 +110,7 @@ single
 jumbosingle
 drop
 none
-	```
+```
 
 3. What is the output of the command? (include screenshot).
 
@@ -118,11 +118,9 @@ none
 
 4. Use the the "--single" rule to crack the hashes by using the following command: 
 
-	`john --single user_logins.txt`
+```
+	john --single user_logins.txt
 
-	```
-john --single user_logins.txt
- 
 Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-long"
 Use the "--format=md5crypt-long" option to force loading these as that type instead
 Using default input encoding: UTF-8
@@ -146,7 +144,7 @@ user:user:1001:1001:just a user,111,,:/home/user:/bin/bash
 service:service:1002:1002:,,,:/home/service:/bin/bash
 
 4 password hashes cracked, 3 left
-	```
+```
 
 5. What is the password for the following users:
 
@@ -165,7 +163,7 @@ service:service:1002:1002:,,,:/home/service:/bin/bash
 
 8. What does the `--wordlist=/usr/share/john/password.lst` do? 
 
-	Uses `password.lst` as the word list of passwords that we will use when running the crack from john. John provides this file and the option `--wordlist` reads words from FILE or using --stdin.
+	Uses `password.lst` as the word list of passwords that we will use when running the crack from john. John provides this file and the option `--wordlist` reads words from FILE or using `--stdin`.
 
 9. What does the `--rules` option do?
 
@@ -181,7 +179,8 @@ service:service:1002:1002:,,,:/home/service:/bin/bash
 
 12. What command would you use to have john display all the passwords you have cracked for user_logins.txt?
 
-	`john --show user_logins.txt`
+```
+	john --show user_logins.txt
 	```                                         
 sys:batman:3:3:sys:/dev:/bin/sh
 klog:123456789:103:104::/home/klog:/bin/false
@@ -191,4 +190,4 @@ user:user:1001:1001:just a user,111,,:/home/user:/bin/bash
 service:service:1002:1002:,,,:/home/service:/bin/bash
 
 6 password hashes cracked, 1 left
-	```
+```	```
