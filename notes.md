@@ -136,8 +136,7 @@ Almost done: Processing the remaining buffered candidate passwords, if any.
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
-
-	`john --show user_logins.txt`
+	john --show user_logins.txt
 
 ```
 msfadmin:msfadmin:1000:1000:msfadmin,,,:/home/msfadmin:/bin/bash
