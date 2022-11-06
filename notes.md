@@ -2,7 +2,7 @@
 
 1. On your Kali machine, open a terminal window and browse to the location of the `user_logins.txt` file. 
 
-2. `john` the Ripper has a bunch of rules for common password permutations based on usernames that could potentially crack some of the passwords. To list the available rule list type the following command: 
+2. John the Ripper has a bunch of rules for common password permutations based on usernames that could potentially crack some of the passwords. To list the available rule list type the following command: 
 
 	`john --list=rules`
 
