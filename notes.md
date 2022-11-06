@@ -2,7 +2,7 @@
 
 1. On your Kali machine, open a terminal window and browse to the location of the `user_logins.txt` file. 
 
-2. John the Ripper has a bunch of rules for common password permutations based on usernames that could potentially crack some of the passwords. To list the available rule list type the following command: 
+2. `john` the Ripper has a bunch of rules for common password permutations based on usernames that could potentially crack some of the passwords. To list the available rule list type the following command: 
 
 	`john --list=rules`
 
@@ -156,7 +156,7 @@ service:service:1002:1002:,,,:/home/service:/bin/bash
 	|service	|service	|
 	|postgres	|postgres	|
 
-6. While John the ripper did reveal the password for some of the users using the "single" rule, it did not crack the password for all the users. We will now use a dictionary list to crack even more passwords. 
+6. While `john` the ripper did reveal the password for some of the users using the "single" rule, it did not crack the password for all the users. We will now use a dictionary list to crack even more passwords. 
 
 7. Type the following command:
 
@@ -164,7 +164,7 @@ service:service:1002:1002:,,,:/home/service:/bin/bash
 
 8. What does the `--wordlist=/usr/share/john/password.lst` do? 
 
-	Uses `password.lst` as the word list of passwords that we will use when running the crack from john. John provides this file and the option `--wordlist` reads words from FILE or using `--stdin`.
+	Uses `password.lst` as the word list of passwords that we will use when running the crack from `john`. `john` provides this file and the option `--wordlist` reads words from FILE or using `--stdin`.
 
 9. What does the `--rules` option do?
 
@@ -178,7 +178,7 @@ service:service:1002:1002:,,,:/home/service:/bin/bash
 
 	123456789
 
-12. What command would you use to have john display all the passwords you have cracked for user_logins.txt?
+12. What command would you use to have `john` display all the passwords you have cracked for user_logins.txt?
 
 	`john --show user_logins.txt`
 
